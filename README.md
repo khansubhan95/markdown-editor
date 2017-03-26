@@ -2,14 +2,14 @@
 
 A web application for writing and previewing markdown in real time. Written in React
 
-##Getting Started
+## Getting Started
 
-###Prerequisites
+### Prerequisites
 
 1. [node](https://nodejs.org/en/)
 2. [npm](https://www.npmjs.com)
 
-##Installation
+## Installation
 Clone the project 
 
 ```git
@@ -29,5 +29,5 @@ npm install create-react-app
 ```
 Edit the files in src and public.
 
-##Builtwith
+## Builtwith
 [react](https://facebook.github.io/react/)   
