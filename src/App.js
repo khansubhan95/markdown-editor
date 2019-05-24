@@ -7,7 +7,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            input: '### heading',
+            input: '### Heading\n\n![](https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg)',
         }
     }
 
@@ -24,14 +24,16 @@ class App extends React.Component {
     render() {
         
         return (
-          <div>
-            <div className = "container">
-              <textarea 
-              onChange = {this.update.bind(this)} 
-              defaultValue = {this.state.input} />
+          <div className = "container-fluid markdown-container">
+            <div className="row markdown-row">
+              <div className = "col input">
+                <textarea 
+                onChange = {this.update.bind(this)} 
+                defaultValue = {this.state.input} />
+              </div>
 
-              <span style={{marginLeft:10}} dangerouslySetInnerHTML={this.getMarkup(this.state.input)} />
-
+              <div className="col output" style={{marginLeft:10}} dangerouslySetInnerHTML={this.getMarkup(this.state.input)}>
+              </div>
             </div>
           </div>
       )
